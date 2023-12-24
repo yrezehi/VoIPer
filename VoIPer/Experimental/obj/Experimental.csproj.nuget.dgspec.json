@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Documents\\Projects\\VoIPer\\VoIPer\\VoIPer\\VoIPer.csproj": {}
+    "C:\\Users\\Administrator\\Documents\\Projects\\VoIPer\\VoIPer\\Experimental\\Experimental.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Documents\\Projects\\VoIPer\\VoIPer\\VoIPer\\VoIPer.csproj": {
+    "C:\\Users\\Administrator\\Documents\\Projects\\VoIPer\\VoIPer\\Experimental\\Experimental.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\Projects\\VoIPer\\VoIPer\\VoIPer\\VoIPer.csproj",
-        "projectName": "VoIPer",
-        "projectPath": "C:\\Users\\Administrator\\Documents\\Projects\\VoIPer\\VoIPer\\VoIPer\\VoIPer.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\Projects\\VoIPer\\VoIPer\\Experimental\\Experimental.csproj",
+        "projectName": "Experimental",
+        "projectPath": "C:\\Users\\Administrator\\Documents\\Projects\\VoIPer\\VoIPer\\Experimental\\Experimental.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Documents\\Projects\\VoIPer\\VoIPer\\VoIPer\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Documents\\Projects\\VoIPer\\VoIPer\\Experimental\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,16 +43,6 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "dependencies": {
-            "SIPSorcery": {
-              "target": "Package",
-              "version": "[6.0.12, )"
-            },
-            "SIPSorceryMedia.Abstractions": {
-              "target": "Package",
-              "version": "[1.2.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
