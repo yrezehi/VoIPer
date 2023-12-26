@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stratus</title>
 
-    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
-<body>
-    <script src='Assets/JS/script.js'></script>
+<body class="h-[100vh] w-[100vw] p-0 m-0 overflow-hidden">
+
+    <div class="relative flex items-center justify-center h-screen">
+        <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none">
+            <source src="Assets/vids/bg.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script src='Assets/js/script.js'></script>
 </body>
 
 </html>
