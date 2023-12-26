@@ -4,4 +4,4 @@
   <br>
 </h1>
 
-<h4 align="center"> <b>VoIPer</b> Idk another useless project </h4>
+<h4 align="center"> <b>VoIPer</b> WebRTC expermintal project </h4>
