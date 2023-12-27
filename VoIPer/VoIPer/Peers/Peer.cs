@@ -1,4 +1,6 @@
-﻿using SIPSorcery.Net;
+﻿using SIPSorcery.Media;
+using SIPSorcery.Net;
+using SIPSorceryMedia.Abstractions;
 using VoIPer.Utils;
 
 namespace VoIPer.Peers
@@ -9,20 +11,27 @@ namespace VoIPer.Peers
         public RTCPeerConnection Connection { get; set; }
         public DateTime JoinTime { get; set; }
 
+        public VideoTestPatternSource VideoPatternSource { get; set; }
+        public AudioExtrasSource AudioSource { get; set; }
+
+        public MediaStreamTrack VideStreamTrack { get; set; }
+        public MediaStreamTrack AudioStreamTrack { get; set; }
+
         public Peer() {
             Id = IdentifierUtil.GenerateShort();
             JoinTime = DateTime.Now;
             Connection = new RTCPeerConnection(null);
         }
 
-        public async Task OnConnect()
+        public Peer SetOnConnect()
         {
             Connection.onconnectionstatechange += state =>
             {
-                _ = state switch
+                state switch
                 {
-                    RTCPeerConnectionState.connected => () => { 
-                    
+                    RTCPeerConnectionState.connected => () =>
+                    {
+
                     },
                     RTCPeerConnectionState.failed => () => {
 
@@ -33,6 +42,13 @@ namespace VoIPer.Peers
                     _ => throw new Exception("Unhandled case: " + state)
                 };
             };
+
+            return this;
+        }
+
+        public Peer SetEventsInstance()
+        {
+
         }
 
         public static Peer Create() =>

@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoIPer", "VoIPer\VoIPer.csproj", "{C79913F4-032D-451F-9540-8C753E1CCED4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoIPer", "VoIPer\VoIPer.csproj", "{C79913F4-032D-451F-9540-8C753E1CCED4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{1B7D844F-DE09-44AD-B14B-C9F5C7FAA329}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI", "UI\UI.csproj", "{1B7D844F-DE09-44AD-B14B-C9F5C7FAA329}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experimental", "Experimental\Experimental.csproj", "{C04B4F1E-B1A2-49BD-8E07-AE6FF57AABEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1B7D844F-DE09-44AD-B14B-C9F5C7FAA329}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B7D844F-DE09-44AD-B14B-C9F5C7FAA329}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B7D844F-DE09-44AD-B14B-C9F5C7FAA329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C04B4F1E-B1A2-49BD-8E07-AE6FF57AABEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C04B4F1E-B1A2-49BD-8E07-AE6FF57AABEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C04B4F1E-B1A2-49BD-8E07-AE6FF57AABEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C04B4F1E-B1A2-49BD-8E07-AE6FF57AABEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
