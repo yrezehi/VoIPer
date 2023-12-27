@@ -19,11 +19,17 @@ namespace VoIPer.Peers
         {
             Connection.onconnectionstatechange += state =>
             {
-                var x = state switch
+                _ = state switch
                 {
-                    RTCPeerConnectionState.connected ,
-                    RTCPeerConnectionState.failed => "Case 2",
-                    RTCPeerConnectionState.closed => "Case 3",
+                    RTCPeerConnectionState.connected => () => { 
+                    
+                    },
+                    RTCPeerConnectionState.failed => () => {
+
+                    },
+                    RTCPeerConnectionState.closed => () => {
+
+                    },
                     _ => throw new Exception("Unhandled case: " + state)
                 };
             };
