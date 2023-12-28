@@ -1,11 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 @font-face {
     src: url('../fonts/black-future/Black\ Future.otf');
     font-family: 'black-future';
     font-display: swap;
 }
 
+* {
+    line-height: normal !important;
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .black-future-font {
     font-family: 'black-future' !important;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 [data-element="wrapper"] {
